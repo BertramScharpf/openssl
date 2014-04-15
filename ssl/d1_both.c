@@ -1334,7 +1334,7 @@ dtls1_process_heartbeat(SSL *s)
 	unsigned int payload;
 	unsigned int padding = 16; /* Use minimum padding */
 
-    apply_msg_callback(s);
+	apply_msg_callback(s);
 
 	/* Read type and payload length first */
 	if (1 + 2 + 16 > s->s3->rrec.length)
